@@ -1,0 +1,27 @@
+.hero-home {
+
+  &__big-container {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 720px);
+    width: 100%;
+    // height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // overflow: hidden;
+    // border: 1px solid red;
+
+  }
+  .carousel-item-imgBox{
+    // border: 1px solid red;
+    height: 720px;
+  }
+  .carousel-item-title {
+    text-shadow: 2px 2px 4px #fff;
+  }
+
+  .carousel-item-text {
+    text-shadow: 1px 1px 2px #fff;
+  }
+}
