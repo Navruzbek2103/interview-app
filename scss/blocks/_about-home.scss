@@ -1,0 +1,44 @@
+.about-home {
+  padding: 60px 0 50px;
+
+  &__wrapper {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__imgBox{
+      max-width: 680px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 10px;
+
+      &-img{
+        border-radius: 10px 0 0 10px;
+        height: 420px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content{
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+
+      &-title{
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      &-text{
+        text-align: justify
+      }
+    }
+
+  }
+}
