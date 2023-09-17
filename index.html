@@ -1,120 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/main.css" />
-  <title>Document</title>
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <div class="nav__inner">
-          <a href="./index.html" class="nav__inner__logoLink">
-            <img
-            src="./images/site-logo.jpg"
-            alt="this image is site logo"
-            class="nav__inner__logoLink__img"
-            />
-          </a>
-          <marquee direction="down" scrollamount="1.5" class="nav__inner__info">Sayt test rejimida ishlamoqda...</marquee>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="./index.html" class="nav__item__link">Bosh sahifa</a>
-          </li>
-          <li class="nav__item">
-            <a href="#our-services-home" class="nav__item__link"
-            >Xizmatlarimiz</a
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__inner">
+            <a href="./index.html" class="nav__inner__logoLink">
+              <img
+                src="./images/site-logo.jpg"
+                alt="this image is site logo"
+                class="nav__inner__logoLink__img"
+              />
+            </a>
+            <marquee
+              direction="down"
+              scrollamount="1.5"
+              class="nav__inner__info"
+              >Sayt test rejimida ishlamoqda...</marquee
             >
-          </li>
-          <li class="nav__item">
-            <a href="#about-home" class="nav__item__link"
-            >Biz haqimizda</a
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#header" class="nav__item__link">Bosh sahifa</a>
+            </li>
+            <li class="nav__item">
+              <a href="#our-services-home" class="nav__item__link"
+                >Xizmatlarimiz</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about-home" class="nav__item__link">Biz haqimizda</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__item__link">Bog'lanish</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero-home">
+        <div class="container-big hero-home__big-container">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-item-imgBox">
+                  <img
+                    src="./images/1.jpg"
+                    class="d-block w-100 carousel-item-imgBox-img"
+                    alt="this image is carousel image"
+                  />
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1 carousel-item-title">First slide label</h5>
+                  <p class="fs-3 carousel-item-text">
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-item-imgBox">
+                  <img
+                    src="./images/2.jpg"
+                    class="d-block w-100 carousel-item-imgBox-img"
+                    alt="this image is carousel image"
+                  />
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1 carousel-item-title">Second slide label</h5>
+                  <p class="fs-3 carousel-item-text">
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item-imgBox">
+                  <img
+                    src="./images/3.jpg"
+                    class="d-block w-100 carousel-item-imgBox-img"
+                    alt="this image is carousel image"
+                  />
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1 carousel-item-title">Third slide label</h5>
+                  <p class="fs-3 carousel-item-text">
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
             >
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__item__link">Bog'lanish</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-    <section class="hero-home">
-      <div class="container-big hero-home__big-container">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button  type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <div class="carousel-item-imgBox">
-                <img src="./images/1.jpg" class="d-block w-100 carousel-item-imgBox-img" alt="this image is carousel image">
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fs-1 carousel-item-title">First slide label</h5>
-                <p class="fs-3 carousel-item-text">Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <div class="carousel-item-imgBox">
-                <img src="./images/2.jpg" class="d-block w-100 carousel-item-imgBox-img" alt="this image is carousel image">
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fs-1 carousel-item-title">Second slide label</h5>
-                <p class="fs-3 carousel-item-text">Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-item-imgBox">
-                <img src="./images/3.jpg" class="d-block w-100 carousel-item-imgBox-img" alt="this image is carousel image">
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="fs-1 carousel-item-title">Third slide label</h5>
-                <p class="fs-3 carousel-item-text">Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
 
       <section class="our-services-home" id="our-services-home">
         <div class="container">
           <div class="our-services-home__wrapper">
-            <h2 class="our-services-home__title">Xizmatlarimizdan foydalaning</h2>
+            <h2 class="our-services-home__title">
+              Xizmatlarimizdan foydalaning
+            </h2>
 
             <ul class="our-services-home__list">
               <li class="our-services-home__item">
-                <a href="" class="our-services-home__item__link">
+                <div class="our-services-home__item__link">
                   <div class="our-services-home__item__link__imgBox">
-                    <img src="./images/input.png" alt="input info icon" class="our-services-home__item__link__imgBox-img">
+                    <img
+                      src="./images/input.png"
+                      alt="input info icon"
+                      class="our-services-home__item__link__imgBox-img"
+                    />
                   </div>
-                  <h3 class="our-services-home__item__link-title">Bazaga savollar qo'shish</h3>
-                  <p class="our-services-home__item__link-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolorum?</p>
-                </a>
+                  <h3 class="our-services-home__item__link-title">
+                    Bazaga savollar qo'shish
+                  </h3>
+                  <p class="our-services-home__item__link-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore, dolorum?
+                  </p>
+                </div>
               </li>
               <li class="our-services-home__item">
-                <a href="" class="our-services-home__item__link">
+                <div class="our-services-home__item__link">
                   <div class="our-services-home__item__link__imgBox">
-                    <img src="./images/find.png" alt="input info icon" class="our-services-home__item__link__imgBox-img">
+                    <img
+                      src="./images/find.png"
+                      alt="input info icon"
+                      class="our-services-home__item__link__imgBox-img"
+                    />
                   </div>
-                  <h3 class="our-services-home__item__link-title">Savollarga javob berish</h3>
-                  <p class="our-services-home__item__link-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, dolorum?</p>
-                </a>
+                  <h3 class="our-services-home__item__link-title">
+                    Savollarga javob berish
+                  </h3>
+                  <p class="our-services-home__item__link-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore, dolorum?
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -125,25 +204,119 @@
         <div class="container">
           <div class="about-home__wrapper">
             <div class="about-home__wrapper__imgBox">
-              <img src="./images/about.jpg" alt="About" class="about-home__wrapper__imgBox-img">
+              <img
+                src="./images/about.jpg"
+                alt="About"
+                class="about-home__wrapper__imgBox-img"
+              />
             </div>
             <div class="about-home__wrapper__content">
-              <h2 class="about-home__wrapper__content-title">Lorem ipsum dolor sit amet consectetur.</h2>
-                <p class="about-home__wrapper__content-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, deserunt veniam possimus iste esse fuga repellendus quisquam. Quae sapiente, veniam vitae veritatis sit facilis reprehenderit distinctio itaque repellat, consectetur quia cum quasi pariatur temporibus aliquam corrupti odio dolorem nisi, necessitatibus repudiandae vero eum. Iste, beatae molestiae fugit, perferendis, excepturi optio doloribus quod autem corrupti ea delectus obcaecati repellat ad voluptate nobis maxime asperiores. Delectus, sed! Accusantium sint, maxime et similique aspernatur soluta enim magnam impedit blanditiis dolorum asperiores commodi, voluptates facilis. Dolorum at suscipit inventore explicabo eveniet optio quos vero.</p>
+              <h2 class="about-home__wrapper__content-title">
+                Lorem ipsum dolor sit amet consectetur.
+              </h2>
+              <p class="about-home__wrapper__content-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde,
+                deserunt veniam possimus iste esse fuga repellendus quisquam.
+                Quae sapiente, veniam vitae veritatis sit facilis reprehenderit
+                distinctio itaque repellat, consectetur quia cum quasi pariatur
+                temporibus aliquam corrupti odio dolorem nisi, necessitatibus
+                repudiandae vero eum. Iste, beatae molestiae fugit, perferendis,
+                excepturi optio doloribus quod autem corrupti ea delectus
+                obcaecati repellat ad voluptate nobis maxime asperiores.
+                Delectus, sed! Accusantium sint, maxime et similique aspernatur
+                soluta enim magnam impedit blanditiis dolorum asperiores
+                commodi, voluptates facilis. Dolorum at suscipit inventore
+                explicabo eveniet optio quos vero.
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
-<!--
+
     <footer class="footer">
-      <div class="container">
-        <h2>Bu home page</h2>
+      <div class="container-big footer__container-big">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__wrapper__box">
+              <a href="./index.html" class="footer__wrapper__box__link">
+                <img
+                  src="./images/site-logo.jpg"
+                  alt="site logo"
+                  class="footer__wrapper__box__link-img"
+                />
+              </a>
+              <ul class="footer__wrapper__list">
+                <li class="footer__wrapper__item">
+                  <a href="#header" class="footer__wrapper__item-link"
+                    >Bosh sahifa</a
+                  >
+                </li>
+                <li class="footer__wrapper__item">
+                  <a
+                    href="#our-services-home"
+                    class="footer__wrapper__item-link"
+                    >Xizmatlarimiz</a
+                  >
+                </li>
+                <li class="footer__wrapper__item">
+                  <a href="#about-home" class="footer__wrapper__item-link"
+                    >Biz haqimizda</a
+                  >
+                </li>
+                <li class="footer__wrapper__item">
+                  <a href="" class="footer__wrapper__item-link">Bog'lanish</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer> -->
+      <a href="#header" class="navigator-button">
+        <img
+          src="./images/arrow-up.png"
+          alt="arrow up"
+          class="navigator-button__img"
+        />
+      </a>
+    </footer>
+
+    <div class="modal-input d-none">
+      <div class="container">
+        <div class="modal-input__wrapper">
+          <form class="modal-input__form">
+            <h2 class="modal-input__form-title">Input your question</h2>
+            <div class="modal-input__form-box">
+              <input type="text" class="modal-input__form-input form-control" />
+              <input type="submit" class="modal-input__form-send btn btn-success px-4" value="Add" />
+              <button type="reset" class="modal-input__form-reset px-4 btn btn-danger">Clear</button>
+            </div>
+          </form>
+
+          <ul class="modal-input__resultList">
+            <li class="modal-input__resultItem">
+              p.modal-input__resultItem
+            </li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+            <li class="modal-input__resultItem">lorem</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <script src="./js/plugin.js"></script>
     <script src="./js/main.js"></script>
   </body>
-  </html>
+</html>
