@@ -34,6 +34,10 @@ img {
   vertical-align: middle;
 }
 
+button.btn:active {
+  transform: scale(0.9) !important;
+}
+
 ol,
 ul {
   margin: 0;
@@ -86,6 +90,10 @@ main {
 
 img {
   vertical-align: middle;
+}
+
+button.btn:active {
+  transform: scale(0.9) !important;
 }
 
 ol,
@@ -360,6 +368,7 @@ p {
           backdrop-filter: blur(10px);
 }
 .modal-input__wrapper {
+  position: relative;
   padding: 100px 0;
 }
 .modal-input__wrapper .modal-input__form {
@@ -389,12 +398,12 @@ p {
 }
 .modal-input__wrapper .modal-input__resultList {
   width: 60%;
-  height: 300px;
+  max-height: 300px;
   overflow-y: scroll;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 10px;
-  padding: 10px 12px;
+  padding: 10px 15px;
 }
 .modal-input__wrapper .modal-input__resultList::-webkit-scrollbar {
   display: none;
@@ -403,6 +412,35 @@ p {
   font-size: 22px;
   padding: 7px 0;
   border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-input__wrapper .modal-input__resultItem-text {
+  width: 78%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.modal-input__wrapper__closeBtn {
+  position: absolute;
+  top: 5%;
+  right: 13%;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.modal-input__wrapper__closeBtn:active {
+  transform: scale(0.9);
+}
+.modal-input__wrapper__closeBtn:hover {
+  box-shadow: 0 0 15px 3px #09f7ff;
+}
+.modal-input__wrapper__closeBtn-img {
+  width: 50%;
 }
 
 .modal-output {

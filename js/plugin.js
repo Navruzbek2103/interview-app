@@ -11,7 +11,7 @@ let createElement = function(tagName, className, content){
     newELement.setAttribute("class", className);
   }
   if(content){
-    newELement.innerHTMl = content;
+    newELement.innerHTML = content;
   }
   return newELement;
 }

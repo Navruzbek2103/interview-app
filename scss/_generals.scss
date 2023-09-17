@@ -36,6 +36,10 @@ img {
   vertical-align: middle;
 }
 
+button.btn:active {
+  transform: scale(.9) !important;
+}
+
 ol,
 ul {
   margin: 0;

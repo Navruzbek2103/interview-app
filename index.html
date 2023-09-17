@@ -35,9 +35,7 @@
               <a href="#header" class="nav__item__link">Bosh sahifa</a>
             </li>
             <li class="nav__item">
-              <a href="#our-services" class="nav__item__link"
-                >Xizmatlarimiz</a
-              >
+              <a href="#our-services" class="nav__item__link">Xizmatlarimiz</a>
             </li>
             <li class="nav__item">
               <a href="#about-home" class="nav__item__link">Biz haqimizda</a>
@@ -157,7 +155,7 @@
             <h2 class="our-services__title">Xizmatlarimizdan foydalaning</h2>
 
             <ul class="our-services__list">
-              <li class="our-services__item" onclick=inputInfo()>
+              <li class="our-services__item" onclick="inputInfo()">
                 <div class="our-services__item__imgBox">
                   <img
                     src="./images/input.png"
@@ -279,17 +277,17 @@
       <div class="container">
         <div class="modal-input__wrapper">
           <form class="modal-input__form">
-            <h2 class="modal-input__form-title">Input your question</h2>
+            <h2 class="modal-input__form-title" >Input your question</h2>
             <div class="modal-input__form-box">
               <input type="text" class="modal-input__form-input form-control" />
               <input
                 type="submit"
-                class="modal-input__form-send btn btn-success px-4"
+                class="modal-input__form-send btn btn-success fs-5 px-4"
                 value="Add"
               />
               <button
                 type="reset"
-                class="modal-input__form-reset px-4 btn btn-danger"
+                class="modal-input__form-reset px-4 fs-5 btn btn-danger"
               >
                 Clear
               </button>
@@ -297,26 +295,16 @@
           </form>
 
           <ul class="modal-input__resultList">
-            <li class="modal-input__resultItem">p.modal-input__resultItem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
-            <li class="modal-input__resultItem">lorem</li>
+
           </ul>
+          <button class="modal-input__wrapper__closeBtn">
+            <img src="./images/close.png" alt="this image is close icon" class="modal-input__wrapper__closeBtn-img">
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="modal-output">
+    <div class="modal-output d-none">
       <div class="container">
         <div class="modal-output__wrapper">
           <div class="modal-output__wrapper__box">

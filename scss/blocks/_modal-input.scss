@@ -11,6 +11,7 @@
   backdrop-filter: blur(10px);
 
   &__wrapper {
+    position: relative;
     padding: 100px 0;
 
     .modal-input__form {
@@ -45,23 +46,55 @@
     .modal-input {
       &__resultList {
         width: 60%;
-        height: 300px;
+        max-height: 300px;
         overflow-y: scroll;
         margin: 0 auto;
         background-color: #fff;
         border-radius: 10px;
-        padding: 10px 12px;
+        padding: 10px 15px;
 
-        &::-webkit-scrollbar{
+        &::-webkit-scrollbar {
           display: none;
         }
       }
 
-      &__resultItem{
-        // border: 1px solid red;
+      &__resultItem {
         font-size: 22px;
         padding: 7px 0;
         border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+          width: 78%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &__closeBtn{
+      position: absolute;
+      top: 5%;
+      right: 13%;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+
+      &:active{
+        transform: scale(.9);
+      }
+      &:hover{
+        box-shadow: 0 0 15px 3px #09f7ff;
+      }
+
+      &-img{
+        width: 50%;
       }
     }
   }
