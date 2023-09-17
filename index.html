@@ -35,7 +35,7 @@
               <a href="#header" class="nav__item__link">Bosh sahifa</a>
             </li>
             <li class="nav__item">
-              <a href="#our-services-home" class="nav__item__link"
+              <a href="#our-services" class="nav__item__link"
                 >Xizmatlarimiz</a
               >
             </li>
@@ -151,49 +151,43 @@
         </div>
       </section>
 
-      <section class="our-services-home" id="our-services-home">
+      <section class="our-services" id="our-services">
         <div class="container">
-          <div class="our-services-home__wrapper">
-            <h2 class="our-services-home__title">
-              Xizmatlarimizdan foydalaning
-            </h2>
+          <div class="our-services__wrapper">
+            <h2 class="our-services__title">Xizmatlarimizdan foydalaning</h2>
 
-            <ul class="our-services-home__list">
-              <li class="our-services-home__item">
-                <div class="our-services-home__item__link">
-                  <div class="our-services-home__item__link__imgBox">
-                    <img
-                      src="./images/input.png"
-                      alt="input info icon"
-                      class="our-services-home__item__link__imgBox-img"
-                    />
-                  </div>
-                  <h3 class="our-services-home__item__link-title">
-                    Bazaga savollar qo'shish
-                  </h3>
-                  <p class="our-services-home__item__link-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore, dolorum?
-                  </p>
+            <ul class="our-services__list">
+              <li class="our-services__item" onclick=inputInfo()>
+                <div class="our-services__item__imgBox">
+                  <img
+                    src="./images/input.png"
+                    alt="input info icon"
+                    class="our-services__item__imgBox-img"
+                  />
                 </div>
+                <h3 class="our-services__item-title">
+                  Bazaga savollar qo'shish
+                </h3>
+                <p class="our-services__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore, dolorum?
+                </p>
               </li>
-              <li class="our-services-home__item">
-                <div class="our-services-home__item__link">
-                  <div class="our-services-home__item__link__imgBox">
-                    <img
-                      src="./images/find.png"
-                      alt="input info icon"
-                      class="our-services-home__item__link__imgBox-img"
-                    />
-                  </div>
-                  <h3 class="our-services-home__item__link-title">
-                    Savollarga javob berish
-                  </h3>
-                  <p class="our-services-home__item__link-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Inventore, dolorum?
-                  </p>
+              <li class="our-services__item">
+                <div class="our-services__item__imgBox">
+                  <img
+                    src="./images/find.png"
+                    alt="input info icon"
+                    class="our-services__item__imgBox-img"
+                  />
                 </div>
+                <h3 class="our-services__item-title">
+                  Savollarga javob berish
+                </h3>
+                <p class="our-services__item-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore, dolorum?
+                </p>
               </li>
             </ul>
           </div>
@@ -288,15 +282,22 @@
             <h2 class="modal-input__form-title">Input your question</h2>
             <div class="modal-input__form-box">
               <input type="text" class="modal-input__form-input form-control" />
-              <input type="submit" class="modal-input__form-send btn btn-success px-4" value="Add" />
-              <button type="reset" class="modal-input__form-reset px-4 btn btn-danger">Clear</button>
+              <input
+                type="submit"
+                class="modal-input__form-send btn btn-success px-4"
+                value="Add"
+              />
+              <button
+                type="reset"
+                class="modal-input__form-reset px-4 btn btn-danger"
+              >
+                Clear
+              </button>
             </div>
           </form>
 
           <ul class="modal-input__resultList">
-            <li class="modal-input__resultItem">
-              p.modal-input__resultItem
-            </li>
+            <li class="modal-input__resultItem">p.modal-input__resultItem</li>
             <li class="modal-input__resultItem">lorem</li>
             <li class="modal-input__resultItem">lorem</li>
             <li class="modal-input__resultItem">lorem</li>
@@ -311,6 +312,31 @@
             <li class="modal-input__resultItem">lorem</li>
             <li class="modal-input__resultItem">lorem</li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-output">
+      <div class="container">
+        <div class="modal-output__wrapper">
+          <div class="modal-output__wrapper__box">
+            <img
+              src="./images/spinner.png"
+              alt="spinner image"
+              class="modal-output__wrapper__box-img"
+            />
+            <button class="modal-output__wrapper__box-btn">Click me !</button>
+          </div>
+          <div class="modal-output__wrapper__result">
+            <p class="modal-output__wrapper__result-text">
+              <strong>
+                <span class="modal-output__wrapper__result-text-span">1</span
+                >-savol.</strong
+              >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nobis
+              at nihil harum fuga. Dolores.
+            </p>
+          </div>
         </div>
       </div>
     </div>

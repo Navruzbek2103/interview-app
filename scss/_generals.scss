@@ -16,13 +16,23 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+    background-color: #07484a;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #70908b;
+    outline: 5px solid #70908b;
+  }
 }
 
 main {
   flex-grow: 1;
 }
 
-img{
+img {
   vertical-align: middle;
 }
 
